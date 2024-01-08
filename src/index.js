@@ -5,6 +5,7 @@ import Error from './pages/Error';
 import Logement from './pages/Logement';
 import Apropos from './pages/Apropos';
 import Header from './components/Header';
+import Banner from './components/Banner';
 import { BrowserRouter as Router, Route, Routes } from 'react-router-dom'
 
 
@@ -13,6 +14,7 @@ root.render(
   <React.StrictMode>
     <Router>
       <Header />
+      <Banner />
       <Routes>
         <Route path="/" element={<App />} />
         <Route path="/Logement" element={<Logement />} />
