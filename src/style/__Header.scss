@@ -1,0 +1,21 @@
+header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    
+    
+    .navbar{
+        display: flex;
+        gap: 57px;
+    
+        a{
+            color: $main-color;
+            font-size: 24px;
+            
+            &.active{
+                text-decoration: underline;
+            }
+        }
+        
+    }
+}
