@@ -1,3 +1,5 @@
+import '../style/__Index.scss';
+
 function Logement() {
     return (
       <div className="Logement">
