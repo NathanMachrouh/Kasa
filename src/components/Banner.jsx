@@ -1,13 +1,8 @@
-//import fond1 from '../assets/fond1.jpg' ;
-
-import '../style/__Index.scss' ;
-
-function Banner() {
+export function Banner({content, className}) {
     return (
-        <div className='container_banner'>
-            <p>Chez vous, partout et ailleurs</p>
+        <div className={className}>
+            { content ? <p>{content}</p> : null }   
         </div>
-    );
-  }
-  
-  export default Banner;  
+    )
+}
+export default Banner;
