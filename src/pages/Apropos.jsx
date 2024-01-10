@@ -5,7 +5,8 @@ function Apropos() {
     <div className="Apropos">
       <Banner 
       className="container_banner_about"
-      />         
+      /> 
+              
     </div>
   );
 }
