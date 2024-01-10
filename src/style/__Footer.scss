@@ -1,13 +1,15 @@
 footer{
-    position: fixed;
-    bottom: 0;
-    left: 0;
-    text-align: center;
-    align-items: center;
-    color: white;
+    position: absolute;
     background-color: black;
+    text-align: center;
+    color: white;
     width: 100%;
+    max-width: none;
     height: 200px;
+    min-height: 100px;
+    left: 0;
+    bottom: 0;
+    display: none;
     
     img{
         margin-top: 50px;

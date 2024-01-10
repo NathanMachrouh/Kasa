@@ -1,5 +1,14 @@
 body{
-    max-width: 1240px;
+    position: relative;
+    display: flex;
+    justify-content: center;
     font-family: $main-font;
     margin: auto;
+    align-items: center;
+    width: 100%;
+}
+
+#root{
+    max-width: 1240px;
+    width: 100%;
 }
