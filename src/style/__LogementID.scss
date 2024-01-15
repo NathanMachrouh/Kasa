@@ -2,12 +2,11 @@
     color: $main-color;
     margin-top: 50px;
 
-    img{
+    .LogementImg{
         width: 100%;
-        height: 415px; 
         object-fit: cover;
         border-radius: 25px;
-        
+        height: 415px;
     }
 
     .BlocContainer{
@@ -24,14 +23,15 @@
         ul{
             margin-top: 20px;
             display: flex;
-            gap: 10px;
+            gap: 5px;
             color: $white;
             list-style: none;
             
             li{
                 background-color: $main-color;
-                padding: 5px 40px;
+                padding: 5px 25px;
                 border-radius: 10px;
+                text-align: center;
             }
         }
         
@@ -40,6 +40,7 @@
             display: flex;
             align-items: center;
             gap: 10px;
+            justify-content: flex-end;
 
                 img{
                     width: 64px;
@@ -48,12 +49,6 @@
                     align-items: center;
                 }
         }
-
-        .rating{
-            margin-top: 20px;
-            text-align: right;
-        }
-
     }
 
     h1{
@@ -61,5 +56,4 @@
         font-weight: 500; 
     }
     
-    //height: calc(100vh - 98px);
 }

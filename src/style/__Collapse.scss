@@ -1,0 +1,52 @@
+.collapse-container {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 20px;
+
+    .collapse {
+        position: relative;
+        font-size: 18px;
+        width: 582px;
+        cursor: pointer;
+
+        .collapse-header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            color: white;
+            border-radius: 10px;
+            padding: 10px 20px 10px;
+            background-color: $main-color;
+
+            img {
+                transition: transform 0.3s ease-in;
+            }
+
+            .img-rotate {
+                transform: rotate(180deg);
+            }
+
+            
+        }
+
+        .collapse-content {
+            background-color: darkblue;
+            //background-color: $main-background;
+            display: flex;
+            flex-direction: column;
+            position: relative;
+            border-radius: 0 0 10px 10px;
+            padding: 20px;
+            margin-top: -10px;
+            z-index: -10;
+            width: 100%;
+            transition:
+            height 0.3s ease-in-out, 
+            opacity 0.3s ease-in;
+        }
+        
+        li {
+            list-style: none;
+        }
+    }
+}
