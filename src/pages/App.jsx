@@ -4,8 +4,8 @@ import Apropos from '../pages/Apropos';
 import Error from '../pages/Error';
 import Header from '../components/Header';
 import Footer from '../components/Footer';
-import Logements from '../components/LogementsCard';
 import LogementID from '../components/LogementID';
+import Logements from '../components/LogementsCard';
 
 function App (){
     return(

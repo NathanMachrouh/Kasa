@@ -1,5 +1,20 @@
-.Apropos{
-  height: calc(100vh - 92px);  
-} 
+.Apropos{ 
+  
+  
+  .about{
+    margin-top: 130px;
+    padding: 0 20px 180px 20px;
+    justify-content: center;
+    color: $main-color;
+    
+    .container-collapse {
+      margin-bottom: 30px;
+    }
+    
+  }
 
-
+  p{
+    font-size: 24px;
+  }
+      
+}
