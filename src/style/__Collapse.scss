@@ -9,6 +9,10 @@
         width: 582px;
         cursor: pointer;
 
+        @media (max-width : 800px){
+            width: 100%;
+        }
+
         .collapse-header {
             display: flex;
             justify-content: space-between;
@@ -25,13 +29,11 @@
             .img-rotate {
                 transform: rotate(180deg);
             }
-
-            
+ 
         }
 
         .collapse-content {
-            background-color: darkblue;
-            //background-color: $main-background;
+            background-color: $main-background;
             display: flex;
             flex-direction: column;
             position: relative;
@@ -49,4 +51,6 @@
             list-style: none;
         }
     }
+
+    
 }

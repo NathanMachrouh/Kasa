@@ -14,7 +14,30 @@
         justify-content: center;
         margin-top: 80px;
     }
+
+    
 }
+@media (max-width : 800px){
+
+    .container_banner_home{
+        margin-top: 40px;
+    }
+    .App{
+        padding: 0 20px;
+        position: relative;
+            
+        p{
+            position: absolute;
+            left: 10%;
+            font-size: 34px;
+        }
+    }
+    .container_banner_about{
+        margin: 0 20px;
+        
+    }
+
+    }
 
 .container_banner_about{
     margin-top: 50px;
