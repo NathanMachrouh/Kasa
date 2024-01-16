@@ -51,8 +51,8 @@ function LogementID() {
             content={logement.description}/>
           <Collapse
             titre="Equipements"
-            content={logement.equipments.map((e) => 
-              (<li className="equipements">{e}</li>)
+            content={logement.equipments.map((e, index) => 
+              (<li key={index} className="equipements">{e}</li>)
             )}
           /></div>
         </div>
