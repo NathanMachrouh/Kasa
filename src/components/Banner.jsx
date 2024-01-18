@@ -1,7 +1,7 @@
-export function Banner({content, className}) {
+export function Banner({ content, className }) {
     return (
         <div className={className}>
-            { content ? <p>{content}</p> : null }   
+            {content ? <p>{content}</p> : null}
         </div>
     )
 }

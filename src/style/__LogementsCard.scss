@@ -1,19 +1,19 @@
-.container-logements{
+.container-logements {
     margin-top: 50px;
-    background: #F6F6F6; 
+    background: #F6F6F6;
     display: grid;
-    grid-template-columns: repeat(3,1fr);
+    grid-template-columns: repeat(3, 1fr);
     gap: 60px;
     margin-bottom: 250px;
     padding: 50px;
     border-radius: 25px;
- 
-    .logements{
+
+    .logements {
         position: relative;
-        height: 340px;  
+        height: 340px;
     }
-    
-    p{
+
+    p {
         position: absolute;
         bottom: 0;
         color: $white;
@@ -21,20 +21,21 @@
         font-size: 18px;
         font-weight: 500;
     }
-    
-    img{
-        filter: brightness(85%); 
+
+    img {
+        filter: brightness(85%);
         width: 100%;
         height: 100%;
-        border-radius: 25px;
+        border-radius: 10px;
         object-fit: cover;
     }
 
-    @media (max-width : 800px){
+    @media (max-width : 800px) {
         display: flex;
         flex-direction: column;
         background-color: $white;
         padding: 0 20px;
         gap: 30px;
+
     }
 }
