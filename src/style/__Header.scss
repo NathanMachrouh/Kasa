@@ -1,37 +1,37 @@
-header{
+header {
     display: flex;
     justify-content: space-between;
     align-items: center;
     margin-top: 30px;
-    
-    nav{
+
+    nav {
         display: flex;
         gap: 57px;
-    
-        a{
+
+        a {
             color: $main-color;
             font-size: 24px;
-            
-            &.active{
+
+            &.active {
                 text-decoration: underline;
             }
         }
-        
+
     }
 
-    @media (max-width : 800px){
+    @media (max-width : 800px) {
         justify-content: space-around;
 
-        img{
-            width: 145px; 
+        img {
+            width: 145px;
         }
-       
-       nav{
-        gap: 30px;
 
-        a{
-            font-size: 20px;
+        nav {
+            gap: 30px;
+
+            a {
+                font-size: 20px;
+            }
         }
-       }
     }
 }

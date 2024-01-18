@@ -7,14 +7,14 @@ import Footer from '../components/Footer';
 import LogementID from '../components/LogementID';
 import Logements from '../components/LogementsCard';
 
-function App (){
-    return(
+function App() {
+  return (
     <Router>
       <Header />
       <Routes>
         <Route path="/" element={<>
-        <Accueil />
-        <Logements />
+          <Accueil />
+          <Logements />
         </>} />
         <Route path="/:Logementsid" element={<LogementID />} />
         <Route path="/apropos" element={<Apropos />} />
@@ -22,6 +22,6 @@ function App (){
       </Routes>
       <Footer />
     </Router>
-    )
+  )
 }
 export default App

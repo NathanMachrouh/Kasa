@@ -1,13 +1,13 @@
-.container_banner_home{
+.container_banner_home {
     margin-top: 50px;
     height: 223px;
     border-radius: 25px;
     overflow: hidden;
-    background-image: linear-gradient(rgba(0, 0, 0, 0.2),rgba(0, 0, 0, 0.2)), url('../assets/fond2.jpg');
+    background-image: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), url('../assets/fond2.jpg');
     background-size: cover;
     background-position: center;
-    
-    p{
+
+    p {
         font-size: 48px;
         color: $white;
         display: flex;
@@ -15,36 +15,44 @@
         margin-top: 80px;
     }
 
-    
-}
-@media (max-width : 800px){
 
-    .container_banner_home{
+}
+
+@media (max-width : 800px) {
+
+    .container_banner_home {
         margin-top: 40px;
+        height: 150px;
+        border-radius: 10px;
     }
-    .App{
+
+    .App {
         padding: 0 20px;
-        position: relative;
-            
-        p{
-            position: absolute;
-            left: 10%;
-            font-size: 34px;
+
+        p {
+            font-size: 30px;
+            justify-content: inherit;
+            margin-top: 50px;
+            width: 54%;
+            margin-left: 30px;
         }
     }
-    .container_banner_about{
-        margin: 0 20px;
-        
-    }
 
-    }
+}
 
-.container_banner_about{
+.container_banner_about {
     margin-top: 50px;
     height: 223px;
-    border-radius: 25px;
+    border-radius: 10px;
     overflow: hidden;
     background-image: url('../assets/fond1.jpg');
     background-size: cover;
     background-position: center;
+
+    @media (max-width : 800px){
+        margin: 0 20px;
+        height: 150px;
+        margin-top: 50px;
+
+    }
 }
