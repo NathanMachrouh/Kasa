@@ -1,27 +1,20 @@
 import React, { useState, useEffect } from "react";
-import { useLocation } from "react-router-dom";
+import { useParams } from 'react-router-dom'
 import Json from "../datas/logements.json";
 import Error from "../pages/Error";
 import Rating from "../components/Rating";
 import Collapse from "./Collapse";
 import Carousel from "./Carrousel";
+import TagsList from "./Tags";
 
 function LogementID() {
   const [logement, setLogement] = useState(null);
-  const location = useLocation();
-  const [rating, setRating] = useState(0);
+  const { id } = useParams();
 
   useEffect(() => {
-    const logement = Json.find((logement) => "/" + logement.id === location.pathname);
-    setLogement(logement);
-  }, [location.pathname]);
-
-  useEffect(() => {
-    if (logement) {
-      const note = Number(logement.rating);
-      setRating(note);
-    }
-  }, [logement]);
+    const findLogement = Json.find(item => item.id === id);
+    setLogement(findLogement);
+  }, [id]);
 
   return (
     <div>
@@ -32,18 +25,14 @@ function LogementID() {
             <div className="Bloc1">
               <h1>{logement.title}</h1>
               <p className="LogementLocation">{logement.location}</p>
-              <ul>
-                {logement.tags.map((tag, index) => (
-                  <li key={index}>{tag}</li>
-                ))}
-              </ul>
+              <TagsList tags={logement.tags} />
             </div>
             <div className="Bloc2container">
               <div className="Bloc2">
                 <p className="HostName">{logement.host.name}</p>
                 <img className="HostPicture" src={logement.host.picture} alt="" />
               </div>
-              <Rating rating={rating} />
+              <Rating rating={logement.rating} />
             </div>
           </div>
           <div className='collapse-container'>
