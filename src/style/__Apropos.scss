@@ -1,24 +1,48 @@
-.Apropos {
+  .Apropos {
 
-  .about {
-    margin-top: 80px;
-    padding: 0 20px 180px 20px;
-    justify-content: center;
-    color: $main-color;
+    .about {
+      padding: 0 20px 180px 20px;
+      justify-content: center;
+      color: $main-color;
 
-    .collapse{
-      width: 90%;
-      margin: auto;
+
+      @media (max-width: 800px) {
+        padding-bottom: 170px;
+      }
+
+      .collapse {
+        width: 90%;
+        margin: auto;
+
+        @media (max-width: 800px) {
+          width: initial;
+          padding: 0;
+          margin: 0;
+
+          p {
+            font-size: 13px;
+            font-weight: 700;
+          }
+
+          &:last-child {
+            margin-bottom: 19px;
+          }
+        }
+      }
+
+      .container-collapse {
+        margin-bottom: 25px;
+
+        @media (max-width : 800px) {
+          margin-bottom: 10px;
+
+        }
+      }
+
     }
 
-    .container-collapse {
-      margin-bottom: 25px;
+    p {
+      font-size: 24px;
     }
 
   }
-
-  p {
-    font-size: 24px;
-  }
-
-}

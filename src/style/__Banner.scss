@@ -3,7 +3,7 @@
     height: 223px;
     border-radius: 25px;
     overflow: hidden;
-    background-image: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), url('../assets/fond2.jpg');
+    background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url('../assets/fond2.jpg');
     background-size: cover;
     background-position: center;
 
@@ -13,8 +13,8 @@
         display: flex;
         justify-content: center;
         margin-top: 80px;
+        font-weight: 700;
     }
-
 
 }
 
@@ -33,26 +33,30 @@
             font-size: 30px;
             justify-content: inherit;
             margin-top: 50px;
-            width: 54%;
+            width: 75%;
             margin-left: 30px;
+
+            @media (max-width : 375px) {
+                font-size: 24px;
+                width: 70%;         
+            }
         }
     }
-
 }
 
 .container_banner_about {
-    margin-top: 50px;
+    margin-top: 20px;
     height: 223px;
     border-radius: 10px;
     overflow: hidden;
-    background-image: url('../assets/fond1.jpg');
+    background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url('../assets/fond1.jpg');
     background-size: cover;
     background-position: center;
 
-    @media (max-width : 800px){
+    @media (max-width : 800px) {
         margin: 0 20px;
         height: 150px;
-        margin-top: 50px;
+        margin-top: 20px;
 
     }
 }

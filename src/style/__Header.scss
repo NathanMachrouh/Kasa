@@ -11,6 +11,7 @@ header {
         a {
             color: $main-color;
             font-size: 24px;
+            font-weight: 500;
 
             &.active {
                 text-decoration: underline;
@@ -30,9 +31,17 @@ header {
             gap: 30px;
 
             a {
-                font-size: 20px;
+                font-size: 15px;
                 text-transform: uppercase;
-                
+                color: black;  
+            }
+        }
+    }
+
+    @media (max-width : 375px){
+        nav {
+            a{
+                font-size: 12px;
             }
         }
     }
