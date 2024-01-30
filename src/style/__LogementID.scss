@@ -3,7 +3,7 @@
     margin-top: 50px;
 
     @media (max-width : 800px) {
-        margin-top: 27px;
+        margin-top: 20px;
     }
 
     .collapse-container {
@@ -15,6 +15,10 @@
             flex-direction: column;
             margin-bottom: 0;
             gap: 5px;
+
+            &:last-child{
+                margin-bottom: 10px;
+            }
         }
     }
 
