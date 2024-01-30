@@ -8,9 +8,15 @@
         font-size: 18px;
         width: 582px;
         cursor: pointer;
+        font-weight: 700; 
 
         @media (max-width : 800px) {
             width: 100%;
+            font-size: 12px;
+            
+            &:last-child {
+                margin-bottom: 180px;
+            }
         }
 
         .collapse-header {
@@ -24,6 +30,11 @@
 
             img {
                 transition: transform 0.3s ease-in;
+
+                @media (max-width : 800px) {
+                    width: 15px;
+                    height: 10px;
+                }
             }
 
             .img-rotate {
@@ -33,7 +44,8 @@
         }
 
         .collapse-content {
-            background-color: $main-background;
+            //background-color: $main-background;            
+            background-color: darkblue;
             display: flex;
             flex-direction: column;
             position: relative;

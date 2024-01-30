@@ -24,12 +24,10 @@ function Collapse({ content, titre }) {
                     ref={contentRef}
                     style={isOpened ? {
                         height: contentRef.current ? contentRef.current.scrollHeight + 10 + "px" : "auto",
-                        opacity: 1
-
+                        opacity: 1,                   
                     } : {
                         height: "0px",
                         opacity: 0,
-
                     }}>{content}</p>
             </div>
         </div>
